@@ -36,16 +36,22 @@ p {
   box-shadow: 2px 0 12px rgba(0,0,0,0.06);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
 }
 
 .centered {
   width: 90%;
-  margin: auto;
-  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
   color: #fff;
+  height: 100%;
+  padding-top: 0;
 }
 
 .centered h1 {
@@ -58,6 +64,8 @@ p {
 
 .centered a {
   display: block;
+  text-align: center;
+  width:100%;
   margin: 12px 0;
   padding: 10px 0;
   color: #fff;
@@ -90,11 +98,11 @@ p {
 }
 
 .para-div {
-  width: 100%;
-  max-width: 900px;
+  width: 70vw;
+  overflow-wrap: normal;
   margin: 0 auto 32px auto;
   text-align: center;
-  padding: 32px 24px;
+  align-content: center;
   background: #f1f5fa;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(70,123,157,0.07);
@@ -110,6 +118,13 @@ p {
   color: #222;
   line-height: 1.6;
   margin: 0;
+}
+
+.container-image {
+  max-width: 65vw;
+  height: auto;
+  border-radius: 5px;
+  margin: auto;
 }
 
 a {
